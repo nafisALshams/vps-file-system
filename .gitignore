@@ -1,20 +1,41 @@
-# Dependencies
+### Dependencies
 node_modules/
 
-# Build output
+### Build artifacts
 dist/
 coverage/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
 
-# Local files
+### Caches / tooling
+.cache/
+.tmp/
+.eslintcache
+.nyc_output/
+.turbo/
+.pnpm-store/
+.parcel-cache/
+.vite/
+
+### Local runtime files
 uploads/
-.env
-.env.*
+logs/
 *.log
 *.pid
+*.pid.lock
 
-# OS / Editor
+### Environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+### OS / Editor junk
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
 .vscode/
 .idea/
 *.swp
+*.swo
+*.orig
